@@ -1,0 +1,53 @@
+body{ background-image: url( "satan.jpg" ); }
+
+.maintext{ color:white; font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+
+.pretext{ color:white; font-family: Verdana, Arial, sans-serif; font-size: 10px; }
+
+.text_important{ color: red; font-family: Verdana, Arial, sans-serif; }
+
+.not_link{ color: red; font-family: Tahoma, sans-serif; font-size: 16px; }
+
+.link_main{ text-decoration: none; color: red; font-family: Tahoma, sans-serif; font-size: 16px; }
+
+.link_sec{ text-decoration: none; color: #ff4040; font-family: Tahoma, sans-serif; font-size: 12px; }
+
+.main_cell{ border-right: 1px solid red; }
+
+.sidebar_maincell{ border-bottom: 1px solid red; border-top: 1px solid red; }
+
+.pre_textbox{ text-align: top; }
+
+.article_sep{ color: #ff4040; }
+
+.navtext{ color: #ff4040; font-size: 9px; font-family: Tahoma, sans-serif; }
+
+.img_cent{ text-align: center; }
+
+#title_text{ text-align: center; color: red; font-family: Verdana, Arial, sans-serif; }
+
+#sidebar_table{ width:130px; border-collapse: collapse; }
+
+#sidebar_topcell{ border-bottom: 1px solid red; }
+
+#sidebar_div{ width: 130px; float: left; display: inline-table; vertical-align: top; border-collapse: collapse; }
+
+#main_cont{ display: inline; }
+
+#main_table{ border-collapse: collapse; }
+
+#main_div{ width: 75%; display: inline-table; overflow: hidden; vertical-align: top; border-collapse: collapse; }
+
+#pic_cell{ padding-top:10px; }
+
+#main_headingcell{ height: 30px; align: center; text-align: center; }
+
+#nav_table{ width:100px; border-collapse: collapse; }
+
+#nav_div{ width: 100px; display: inline-table; border-collapse: collapse; }
+
+#article_title{ margin: auto; color: red; font-family: Verdana, Arial, sans-serif; text-align: center; }
+
+
+
+#iktitle{ color: yellow; text-align: center; font-family: Verdana, Arial, sans-serif; }
