@@ -1,0 +1,72 @@
+<html>
+<head>
+<link rel="stylesheet" href="styling.css">
+<title> Live Linux & games on it </title>
+</head>
+
+<body>
+
+<div id="sidebar_div">
+ <table id="sidebar_table">
+   <tr> <td> <img src="contents.PNG" alt="contents"> </td> </tr>
+   <tr> <td id="sidebar_topcell"> <p class="not_link">Computers</p> </td> </tr>
+   <tr> <td> <a class="link_sec" href="pcreviews.html">Reviews</a> </td> </tr>
+   <tr> <td> <a class="link_sec" href="pcrepairs.html">Repair</a> </td> </tr>
+   <tr> <td class="sidebar_maincell"> <a class="link_main" href="gamereviews.html">PC game reviews</a> </td> </tr>
+   <tr> <td class="sidebar_maincell"> <p class="not_link">Fountain pens</p> </td> </tr>
+   <tr> <td> <a class="link_sec" href="penreviews.html">Reviews</a> </td> </tr>
+   <tr> <td> <a class="link_sec" href="penrepairs.html">Repair</a> </td> </tr>
+   <tr> <td class="sidebar_maincell"> <a class="link_main" href="misc.html">Misc</a> </td> </tr>
+ </table>
+</div>
+
+<div id="main_div">
+ <table id="main_table">
+   <tr>
+		<td> <h3 id="article_title">Creating a live Linux USB and installing games through Steam</h3> </td>
+   </tr>
+   <tr>
+	<td> <p class="maintext">	A good workaround to pesky admin-installed restrictions on your workstation	at school is a live USB stick with Linux on it! 
+							By having such an item you would be bypassing the admin restrictions by just not booting into Windows altogether! </p>
+		 <ul class="maintext">	<b> Prerequisites and limitations of this approach (please read) </b> </ul>
+			<li class="maintext"> You must be able to access the boot menu of the PC in question, </li>
+			<li class="maintext"> The USB stick you use must be larger than 8GB if you want to install any meaningful programs onto it, </li>
+			<li class="maintext"> It may preferably be USB 3.0 or faster. If it isn't, your Linux experience will be very slow, </li>
+			<li class="maintext"> This tutorial uses MX Linux as the OS for installation onto the USB stick. This is because it is very easy to enable 
+			persistence on it. You may use another distro, but then this tutorial might not work for you. </li>
+		 </ul>
+		 <br>
+		 <b class="maintext"> How to actually do it </b>
+		 <p class="maintext"> First, get your image of <a class="maintext" href="https://mxlinux.org/download-links/"> MX Linux</a>. You can get it on their site very easily. I recommend the XFCE edition since it's much lighter on system resources than 
+							the KDE Plasma edition, which improves quality of life a lot on a live USB. </p>
+		 <p class="maintext"> Second, burn it to your USB stick of choice. An easy tool to do it from Windows is <a class="maintext" href="https://rufus.ie/en/">Rufus</a>. Don't mess 
+							with the block sizes and formatting, leave that as is. You may make a persistent partition, it's just not necessary. </p>
+		 <p class="maintext"> Thirdly, restart your PC and boot into your freshly burnt MX Linux. This is done by acessing either the boot menu or the BIOS 
+							from the startup screen. Simply mash either F12 or Del or F9 or F1 or F2 or F10 (depending on the maker of your motherboard) and select 
+							your USB stick as the boot device. </p>
+		 <p class="maintext"> Fourthly, select the Customize Boot option of the boot screen. This will throw you into a command prompt with multiple options 
+							to select. The ones that concern us are prompts 4 and 5. 4 concerns whether we want to enable persistence and we do, so select dostore option. 
+							5 concerns what we want persistence on, the root folder, the home folder or both. We want both, so select persist_all. Select whatever is appropriate 
+							for the other prompts. Afterwards it will ask you to create a rootfs, a homefs and a swap partition. Create these according to the size of your USB 
+							stick, though, for some reason, neither homefs nor rootfs can be made larger than 4GB, at least for me. Create a rootfs and a homefs, the swap partition 
+							is not necessary, especially for systems with more than 4GB of RAM. </p>
+		 <p class="maintext"> Fifthly, log into your demo profile with login: demo and password: whatever you set it to. Open up the terminal and type </p>
+		 <p class="maintext">	sudo mx-packageinstaller </p>
+		 <p class="maintext"> Type in your password. Once MX Package Installer opens, search for Steam in it and install it. Accept the EULA and once it installs open terminal and type
+		 <p class="maintext">	su -c steam </p>
+		 <p class="maintext"> This should open Steam and allow you to log in. Once you've done that install any game(s) you have space for. </p>
+		 <p class="maintext"> To run Steam again, run it through the terminal with su -c steam from now on and run games through Steam. </p>
+	</td>
+   </tr>
+ </table>
+</div>
+
+<div id="nav_div">
+ <table align="right" id="nav_table">
+   <tr> <td> <img src="nav.PNG" alt="navigation"> </td> </tr>
+   <tr> <td> <p class="img_cent"> <a href="index.html"> <img src="home.PNG" alt="home button"> </a> </p> </td> </tr>
+ </table>
+</div>
+
+</body>
+</html>

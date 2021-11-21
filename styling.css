@@ -48,6 +48,6 @@ body{ background-image: url( "satan.jpg" ); }
 
 #article_title{ margin: auto; color: red; font-family: Verdana, Arial, sans-serif; text-align: center; }
 
-
+#spooktitle{ text-align: center; color: red; font-family: Verdana, Arial, sans-serif; }
 
 #iktitle{ color: yellow; text-align: center; font-family: Verdana, Arial, sans-serif; }
